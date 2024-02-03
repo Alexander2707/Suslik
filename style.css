@@ -1,0 +1,302 @@
+body {
+  background-color: #E7EAEF;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.links {
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.links:hover {
+  color: #6D8C00;
+}
+
+.div-politika {
+  font-size: 16px;
+}
+
+.button {
+  color: white;
+  background-color: #6D8C00;
+  border: 2px solid #6D8C00;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: #6D8C00;
+  background-color: transparent;
+  border: 2px solid #6D8C00;
+}
+
+.header-link {
+  margin: 0 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1C252C;
+}
+
+.block {
+  display: block;
+}
+
+h1 {
+  color: #63a91f;
+  margin-top: 150px;
+  display: flex;
+  font-size: 64px;
+  justify-content: center;
+  font-weight: 900;
+}
+
+header {
+  background: linear-gradient(60deg, black, transparent), url(https://img.freepik.com/premium-photo/guy-wearing-a-white-shirt-is-lying-on-the-couch-and-sitting-in-the-phone_99433-456.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+}
+
+footer {
+  padding: 30px;
+}
+
+section{
+  padding: 30px 10px 30px 50px;
+}
+
+.div-politika,
+.footer-link,
+.footer-address {
+  padding-bottom: 5px;
+}
+
+.card {
+  background-color: transparent;
+  border: 2px solid #1C252C;
+  width: 175px;
+  height: 250px;
+  display: inline-block;
+  margin-right: 30px;
+  border-radius: 8px;
+  transition: 1s;
+  margin-bottom: 20px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #1C252C;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-politika {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-button {
+  background-color: #6D8C00;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.card-button:hover {
+  background-color: transparent;
+  color: #6D8C00;
+  border: 2px solid #6D8C00;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 500px;
+  border: none;
+  flex-shrink: 0;
+  background-color: #E7EAEF;
+  padding: 48px 74px;
+  border-radius: 32px;
+  overflow-y: auto;
+}
+
+.modal-item {
+  margin: 40px 85px;
+}
+
+.modal-text {
+  color: var(--color-primary-light);
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  width: 274px;
+}
+
+.modal-title {
+  color: var(--color-primary-light);
+  margin-top: 0 auto;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 20px;
+  left: 930px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-lable {
+  display: none;
+}
+
+.input {
+  margin-top: 32px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid #6D8C00;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.form-input:focus {
+  border-color: var(--color-secondary-dark);
+  outline: none;
+  background-color: var(--color-secondary-dark);
+}
+
+.form-input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-primary-light);
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-primary-light);
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--color-primary-light);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-light);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-primary-light);
+}
+
+.form-modal {
+  width: 435px;
+  margin: 0 auto;
+}
+
+.form-terms-link {
+  text-underline-offset: 2px;
+  color: var(--color-primary-light);
+}
+
+title {
+  color: #2B7FFF;
+}
